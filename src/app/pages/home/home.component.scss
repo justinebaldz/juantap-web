@@ -1,0 +1,80 @@
+@import '../../globals';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.hero-banner {
+    @include light-primary;
+    width: 100%;
+    min-width: 1200px;
+    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; 
+    background: linear-gradient(to right, #1597E5, #193498); 
+    // position: absolute;
+    // z-index: 0;
+
+    &__text {
+        justify-self: right;
+        cursor: default;
+        margin-left: 10rem;
+    }
+
+    &__title {
+        @include text;
+        font-size: 60px;
+        color: white;
+        padding: 2rem 0;
+        font-weight: bold;
+    }
+
+    &__subtitle {
+        @include text;
+        font-size: 35px;
+        color: white;
+        word-break: normal;
+        padding: 1rem 0;
+        line-height: 1.2;
+    }
+
+    &__question {
+        @include text;
+        font-size: 20px;
+        color: white;
+        padding: 1rem 0;
+        margin-left: .5rem;
+    }
+
+    &__button {
+        @include text;
+        @include light-primary;
+        font-size: 20px;  
+        padding: 8px 22px;
+        color: #fff;
+        background-color: #1EA5F7;
+        width: 200px;
+        text-align: center;
+        border: 1px solid transparent; 
+        border-radius: 20px;
+        text-decoration: none;
+        transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+
+        &:hover {
+            color: #1EA5F7;
+            background-color: #fff;
+        }
+    }
+
+    &__img {
+        width: 60%;
+    }
+
+
+}

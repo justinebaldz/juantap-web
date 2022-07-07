@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import './globals';
+$color-primary-bg: #193498;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-bar {
+    @include light-primary;
+    width: 100%;
+    min-width: 1200px;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #1597E5, #193498);
+    position: fixed;
+    z-index: 9;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    &__logo {
+        max-width: 150px;
+        margin-right: 10rem;
+    }
+
+    &__menu {
+        display: flex;
+        flex-direction: row;
+        margin-top: 1rem;
+    }
+
+    &__list {
+        display: flex;
+        list-style: none;
+    }
+
+    &__button {
+        @include text;
+        background-color: transparent;
+        color: white;
+        font-size: 18px;
+        font-weight: 400;
+        border: none;
+        outline: none;
+        padding: 10px 20px;
+
+        &:hover {
+            @include bg-secondary;
+            color: yellow;
+            box-shadow: 0 0.5em 0.5em -0.4em $color-primary-bg;
+            transform: translateY(-0.2em);
+            border-radius: .5rem;
+        }
+
+    }
+
+    // -- incase want to have a theme -- //
+    &__settings {
+        justify-self: right;
+    }
+
+}

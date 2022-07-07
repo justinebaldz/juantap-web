@@ -1,0 +1,23 @@
+<section class="about">
+    <div class="about__container">
+        <img class="about__img" src="/assets/images/about/juantap-mock-up.png" alt="device mock up">
+        <div class="about__text">
+            <div class="about__objective">
+                <h1 class="about__title">ABOUT US</h1>
+                <h3 class="about__heading">What is JuanTap?</h3>
+                <p class="about__description">
+                    This would simplify routine transactions by providing Filipinos with a more convenient and modern method
+                    of payment. It is a stored value contactless card that may be used for fare payments in  an increasing
+                    number of point-to-point Modern jeepneys.<br/> You may buy the card and cash it in at a specified convenience
+                    outlet.
+                </p>
+            </div>
+            <div class="about__objective">
+                <h3 class="about__heading">Our Juantap's Objectives:</h3>
+                <ul class="about__list" *ngFor="let object of objectives">
+                    <li class="about__item">{{ object }}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

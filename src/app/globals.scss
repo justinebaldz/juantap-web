@@ -1,0 +1,19 @@
+@mixin text {
+    font-family: 'Poppins', sans-serif;
+}
+
+@mixin bg-primary {
+    background-color: #193498;
+}
+
+@mixin bg-secondary {
+    background-color: #113CFC;
+}
+
+@mixin light-primary {
+    background-color: #1597E5;
+}
+
+@mixin light-secondary {
+    background-color: #69DADB;
+}
