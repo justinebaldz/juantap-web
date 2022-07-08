@@ -1,0 +1,23 @@
+@import '../../globals';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.footer {
+    @include text;
+    background: linear-gradient(to right, #1597E5, #193498);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__text {
+        text-align: center;
+        font-size: 16px;
+        font-weight: 600; 
+        color: #FFFFFF;
+    }
+}
