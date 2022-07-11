@@ -18,16 +18,16 @@ $color-primary-bg: #193498;
     align-items: center;
     box-sizing: border-box;
     background: linear-gradient(to right, #1597E5, #193498);
-    position: fixed;
-    z-index: 9;
-
-    top: 0;
-    left: 0;
-    width: 100%;
+    // position: fixed;
+    // z-index: 9;
 
     &__logo {
         max-width: 150px;
         margin-right: 10rem;
+    }
+
+    &__icon {
+        color: white;
     }
 
     &__menu {
@@ -66,8 +66,8 @@ $color-primary-bg: #193498;
     &__settings {
         justify-self: right;
     }
-
 }
+
 
 /*------------------------------------------
     Responsive Grid Media Queries - 1280, 1024, 768, 480
@@ -76,16 +76,16 @@ $color-primary-bg: #193498;
     768-480     - tablet 
     480-less    - phone landscape & smaller
 --------------------------------------------*/
-@media all and (min-width: 1024px) and (max-width: 1280px) {}
-
-@media all and (min-width: 768px) and (max-width: 1024px) {
-    .nav-bar {
-        &__list {
-            display: none;
-        }
-    }
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+    
 }
 
-@media all and (min-width: 480px) and (max-width: 768px) {}
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+    
+}
 
 @media all and (max-width: 480px) {}

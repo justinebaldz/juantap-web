@@ -65,3 +65,20 @@
         width: 150px;
     }
 }
+
+.animate--bounce {
+    animation: bounceTop-1 3s ease infinite;
+}
+
+
+@keyframes bounceTop-1 {
+
+    0%,
+    100% {
+        transform: translateY(-30px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+} 

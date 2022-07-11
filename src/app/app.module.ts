@@ -14,6 +14,8 @@ import { FooterComponent } from './pages/footer/footer.component';
 import { MatIconModule } from '@angular/material/icon';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { ScrollService } from './services/scroll.service';
+import { LoginComponent } from './pages/login/login.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     FaqsComponent,
     DownloadComponent,
     FooterComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,7 +36,9 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     MatExpansionModule,
     MatToolbarModule,
   ],
-  providers: [],
+  providers: [
+    ScrollService
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

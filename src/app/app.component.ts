@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { ScrollService } from './services/scroll.service';
+import { LinkService } from './services/link.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,8 +10,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent { 
   navItems: any;
+  menu: boolean;
+  test: any;
 
-  constructor() {
+  constructor(
+    private scrollService: ScrollService,
+    private linkService: LinkService,
+    private router: Router
+  ) {
     this.navItems = [
       {
         name: 'Home',
@@ -27,7 +36,7 @@ export class AppComponent {
       },
       {
         name: 'Help',
-        link: "/help",
+        link: "/faqs",
         icon: ""
       },
       {
@@ -41,5 +50,24 @@ export class AppComponent {
         icon: ""
       }
     ];
+
+    this.menu = false;
+    this.navItems = this.linkService.navItems;
+    this.test = "/test";
+  }
+
+  showMenu(): void { 
+    if (this.menu === true) 
+      this.menu = false;
+    else this.menu = true; 
+  }
+
+  scrollToId(id: string) { 
+    this.scrollService.scrollToElementById(id);  
+  }
+
+  linkClick(item: any) {
+    this.router.navigate([item['link']]); 
+    this.linkService.setNavItem(item);
   }
 }

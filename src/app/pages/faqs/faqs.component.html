@@ -1,122 +1,145 @@
-<section>
-    <div class="faqs">
-        <span class="faqs__title">Frequently <span>Asked Questions</span></span>
-        <div class="faqs__content">
-            <mat-accordion class="faqs__accordion">
-                <mat-expansion-panel class="panel" (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-                    <mat-expansion-panel-header class="panel__header">
-                        <mat-panel-title class="panel__text">
-                            <mat-icon class="panel__icon" aria-hidden="true" aria-label="star">star</mat-icon>
+<section class="w-full h-full xl:h-screen bg-[#1597E5] bg-gradient-to-r from-[#1597E5] to-[#193498] text-[Poppins] flex justify-center items-center ">
+    <div class="flex flex-col justify-center items-center mx-5 py-8">
+        <span class="text-3xl md:text-6xl font-bold text-center text-white py-8">Frequently
+            <span class="text-[#ffff00]">
+                Asked Questions
+            </span>
+        </span>
+        <div class="flex flex-col md:flex-row justify-evenly items-center">
+            <mat-accordion class="w-[98%] lg:w-[50%] font-[Poppins] text-[#193498]">
+                <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                    <mat-expansion-panel-header class="h-[48px] text-md sm:text-lg font-medium">
+                        <mat-panel-title class="h-[30px]">
+                            <mat-icon class="m-2" aria-hidden="true" aria-label="star">star</mat-icon>
                             Get Started
                         </mat-panel-title>
                     </mat-expansion-panel-header>
 
-                    <span class="panel__title">
+                    <span class="text-lg font-medium">
                         Where to buy a Juantap card?
                     </span>
-                    <p class="panel__description">
+                    <p class="text-md">
                         A Juantap card can be purchased in a local store or at a jeepney terminal that uses our system.
                         <br />
                         Below is a sample image of a Juantap card (Ordinary Card):
                     </p>
-                    <img class="panel__img" src="/assets/images/faqs/ordinaryCard.png" alt="ordinary-card"
-                        width="350" />
+                    <img class="w-[300px]" src="/assets/images/faqs/ordinaryCard.png" alt="ordinary-card" />
                 </mat-expansion-panel>
 
-                <mat-expansion-panel class="panel" (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-                    <mat-expansion-panel-header class="panel__header" >
-                        <mat-panel-title class="panel__text">
-                            <mat-icon class="panel__icon" aria-hidden="true" aria-label="how_to_reg">how_to_reg</mat-icon>
+                <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                    <mat-expansion-panel-header class="h-[48px] text-md sm:text-lg font-medium">
+                        <mat-panel-title class="h-[30px]">
+                            <mat-icon class="m-2" aria-hidden="true" aria-label="how_to_reg">how_to_reg
+                            </mat-icon>
                             How do I register my Juantap card?
                         </mat-panel-title>
                     </mat-expansion-panel-header>
 
-                    <p class="panel__description"><b>Step 1:</b> You need to purchase the Juantap Card.</p>
-                    <p class="panel__description"><b>Step 2:</b> Go visit our website,
-                        <a href="https://ucc-bscs-bsit.com/bscs/juantap/web/"> Juantap </a>
+                    <p class="text-md"><b>Step 1:</b> You need to purchase the Juantap Card.</p>
+                    <p class="text-md"><b>Step 2:</b> Go visit our website,
+                        <a class="font-bold text-[#193498]" href="https://ucc-bscs-bsit.com/bscs/juantap/web/"> Juantap </a>
                         then click
                         the 'Register' button.
                     </p>
-                    <p class="panel__description"><b>Step 3:</b> You can now enter your personal and account information. To validate your
+                    <p class="text-md"><b>Step 3:</b> You can now enter your personal and account
+                        information. To
+                        validate your
                         email, double-check that your email address is spelled correctly or that it exist. Then, to
-                        submit your information, click 'Create.' <br/> On the front of your purchased card, you'll see
+                        submit your information, click 'Create.' <br /> On the front of your purchased card, you'll see
                         your Card Account Number.</p>
-                    <p class="panel__description"><b>Step 4:</b> It will then ask for your verification code, that will be sent to the email
+                    <p class="text-md"><b>Step 4:</b> It will then ask for your verification code, that will
+                        be
+                        sent to the email
                         address you used to register. Every minute, you can resend an OTP.</p>
-                    <p class="panel__description"><b>Step 5:</b> After registering your Juantap card, you may now log in to check your account,
+                    <p class="text-md"><b>Step 5:</b> After registering your Juantap card, you may now log in
+                        to
+                        check your account,
                         monitor your card balance, and transactions, and also login to our mobile app to unlock
-                        additional features.</p> 
+                        additional features.</p>
                     <br>
-                    <p class="panel__title"><b>You haven't registered yet? and wanted to see how much amount was left on your card?</b>
+                    <p class="panel__title"><b>You haven't registered yet? and wanted to see how much amount was left on
+                            your card?</b>
                     </p>
-                    <p class="panel__description">To view your card balance, simply click the 'Quick View' button in the Login Panel and input
+                    <p class="text-md">To view your card balance, simply click the 'Quick View' button in the
+                        Login Panel and input
                         your Card Account Number.</p>
                 </mat-expansion-panel>
 
-                <mat-expansion-panel class="panel" (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-                    <mat-expansion-panel-header class="panel__header">
-                        <mat-panel-title class="panel__text">
-                            <mat-icon class="panel__icon" aria-hidden="true" aria-label="pin">pin</mat-icon>
+                <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                    <mat-expansion-panel-header class="h-[48px] text-md sm:text-lg font-medium">
+                        <mat-panel-title class="h-[30px]">
+                            <mat-icon class="m-2" aria-hidden="true" aria-label="pin">pin</mat-icon>
                             How to Log in?
                         </mat-panel-title>
                     </mat-expansion-panel-header>
-                    <p class="panel__description">Make sure that your Juantap card is already registered.</p>
-                    <p class="panel__description"><b>Step 1:</b> Enter your email address or phone number, as well as your password, and then
+                    <p class="text-md">Make sure that your Juantap card is already registered.</p>
+                    <p class="text-md"><b>Step 1:</b> Enter your email address or phone number, as well as
+                        your
+                        password, and then
                         click the 'Login' button.</p>
-                    <p class="panel__description"><b>Step 2:</b> You can now see your card balance, account information, and track your
+                    <p class="text-md"><b>Step 2:</b> You can now see your card balance, account information,
+                        and
+                        track your
                         transaction after logging in. You can also login in our mobile app.</p>
                 </mat-expansion-panel>
 
-                <mat-expansion-panel class="panel" (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-                    <mat-expansion-panel-header class="panel__header">
-                        <mat-panel-title class="panel__text">
-                            <mat-icon class="panel__icon" aria-hidden="true" aria-label="account_circle">account_circle</mat-icon>
+                <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                    <mat-expansion-panel-header class="h-[48px] text-md sm:text-lg font-medium">
+                        <mat-panel-title class="h-[30px]">
+                            <mat-icon class="m-2" aria-hidden="true" aria-label="account_circle">account_circle
+                            </mat-icon>
                             Why should you register your Juantap card?
                         </mat-panel-title>
                     </mat-expansion-panel-header>
-                    <p class="panel__description">The advantages of registering your Juantap card include the ability to check and monitor your
+                    <p class="text-md">The advantages of registering your Juantap card include the ability to
+                        check and monitor your
                         balance and transactions, as well as unlocking additional features in our mobile app.</p>
                 </mat-expansion-panel>
 
-                <mat-expansion-panel class="panel" (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-                    <mat-expansion-panel-header class="panel__header">
-                        <mat-panel-title class="panel__text">
-                            <mat-icon class="panel__icon" aria-hidden="true" aria-label="payments">payments</mat-icon>
+                <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                    <mat-expansion-panel-header class="h-[48px] text-md sm:text-lg font-medium">
+                        <mat-panel-title class="h-[30px]">
+                            <mat-icon class="m-2" aria-hidden="true" aria-label="payments">payments</mat-icon>
                             How to cash-in?
                         </mat-panel-title>
                     </mat-expansion-panel-header>
                     <p class="panel__title">An easy step to cash in:</p>
-                    <p class="panel__description"><b>Step 1:</b> You must buy a Juantap card at the nearest jeepney terminal that uses our
+                    <p class="text-md"><b>Step 1:</b> You must buy a Juantap card at the nearest jeepney
+                        terminal
+                        that uses our
                         system.</p>
-                    <p class="panel__description"><b>Step 2:</b> Request cash-in by presenting your Juantap card to the cashier.</p>
-                    <p class="panel__description">The smallest amount of cash you can load to your Juantap card is 10 pesos.</p>
-                    <p class="panel__description"><b>Step 3:</b> After that, you can make a secure transaction with your Juantap card.</p>
+                    <p class="text-md"><b>Step 2:</b> Request cash-in by presenting your Juantap card to the
+                        cashier.</p>
+                    <p class="text-md">The smallest amount of cash you can load to your Juantap card is 10
+                        pesos.
+                    </p>
+                    <p class="text-md"><b>Step 3:</b> After that, you can make a secure transaction with your
+                        Juantap card.</p>
                 </mat-expansion-panel>
 
-                <mat-expansion-panel class="panel" (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-                    <mat-expansion-panel-header class="panel__header">
-                        <mat-panel-title class="panel__text">
-                            <mat-icon class="panel__icon" aria-hidden="true" aria-label="settings_suggest">settings_suggest</mat-icon>
+                <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                    <mat-expansion-panel-header class="h-[48px] text-md sm:text-lg font-medium">
+                        <mat-panel-title class="h-[30px]">
+                            <mat-icon class="m-2" aria-hidden="true" aria-label="settings_suggest">
+                                settings_suggest
+                            </mat-icon>
                             Product & Services
                         </mat-panel-title>
                     </mat-expansion-panel-header>
-                    <ul class="panel__description">
+                    <ul class="text-md">
                         <li>To use your Juantap Card, simply tap it on the device located near the driver's seat
                             near the E-jeep's entrance.</li>
                         <li>Successful payments and transactions will be recorded in the store's records, and
                             registered users will be able to view them by logging into their accounts via the mobile
                             app or the website.</li>
-                        <li>You can log in to 
-                                <a href="https://ucc-bscs-bsit.com/bscs/juantap/web/login.php">Juantap</a>
-                            to see your balance and transactions.</li>
+                        <li>You can log in to
+                            <a class="font-bold text-[#193498]" href="https://ucc-bscs-bsit.com/bscs/juantap/web/login.php">Juantap</a>
+                            to see your balance and transactions.
+                        </li>
                     </ul>
                 </mat-expansion-panel>
             </mat-accordion>
-            <img class="faqs__img" src="/assets/images/faqs/faqs.svg" alt="">
+            <img class="h-[450px] hidden lg:flex" src="/assets/images/faqs/faqs.svg" alt="">
         </div>
     </div>
-
-
-
-
 </section>
