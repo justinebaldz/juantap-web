@@ -1,0 +1,81 @@
+<header class="bg-[#1597E5] bg-gradient-to-r from-[#1597E5] to-[#193498] sticky top-0  cursor-default z-50">
+  <div
+    class="w-full h-[80px] lg:h-[100px] flex flex-row justify-around lg:justify-evenly text-white font-[Poppins] items-center ">
+    <img class="w-[100px] md:w-[120px] lg:w-[150px]" src="/assets/images/logo.png" alt="juantap logo" routerLink="/home"
+      ariaCurrentWhenActive="page">
+    <div class="w-auto gap-4 hidden lg:flex lg:flex-row">
+      <!-- <ul class="text-lg flex flex-row">
+          <li class="cursor-default">
+            <button (click)="linkClick(item)"
+              class="w-[8rem] h-[3rem] rounded-md mt-4 hover:bg-[#113CFC] hover:text-[#ffff00] hover:shadow-[0_0.5em_0.5em_-0.4em_#193498] hover:translate-y-[-0.1em] ease-linear duration-[0.2s] cursor-default">{{
+              item['name'] }}</button>
+          </li>
+          <li class="cursor-default">
+            <button class="w-[8rem] h-[3rem] rounded-md mt-4 hover:bg-[#113CFC] hover:text-[#ffff00] hover:shadow-[0_0.5em_0.5em_-0.4em_#193498] hover:translate-y-[-0.1em] ease-linear duration-[0.2s] cursor-default active" data-scroll-nav="0" aria-current="page" href="#">Home</button>
+          </li>
+          <li class="cursor-default">
+            <button class="w-[8rem] h-[3rem] rounded-md mt-4 hover:bg-[#113CFC] hover:text-[#ffff00] hover:shadow-[0_0.5em_0.5em_-0.4em_#193498] hover:translate-y-[-0.1em] ease-linear duration-[0.2s] cursor-default" data-scroll-nav="1" href="#about">About</button>
+          </li>
+          <li class="cursor-default">
+            <button class="w-[8rem] h-[3rem] rounded-md mt-4 hover:bg-[#113CFC] hover:text-[#ffff00] hover:shadow-[0_0.5em_0.5em_-0.4em_#193498] hover:translate-y-[-0.1em] ease-linear duration-[0.2s] cursor-default" data-scroll-nav="2" href="#contact">Contact</button>
+          </li>
+          <li class="cursor-default">
+            <button class="w-[8rem] h-[3rem] rounded-md mt-4 hover:bg-[#113CFC] hover:text-[#ffff00] hover:shadow-[0_0.5em_0.5em_-0.4em_#193498] hover:translate-y-[-0.1em] ease-linear duration-[0.2s] cursor-default" data-scroll-nav="3" href="#faqs">Help</button>
+          </li>
+          <li class="cursor-default">
+            <button class="w-[8rem] h-[3rem] rounded-md mt-4 hover:bg-[#113CFC] hover:text-[#ffff00] hover:shadow-[0_0.5em_0.5em_-0.4em_#193498] hover:translate-y-[-0.1em] ease-linear duration-[0.2s] cursor-default" data-scroll-nav="6" href="#download">Download</button>
+          </li>
+          <li class="cursor-default">
+            <button class="w-[8rem] h-[3rem] rounded-md mt-4 hover:bg-[#113CFC] hover:text-[#ffff00] hover:shadow-[0_0.5em_0.5em_-0.4em_#193498] hover:translate-y-[-0.1em] ease-linear duration-[0.2s] cursor-default" href="login.php">Log in</button>
+          </li>
+        </ul> -->
+      <nav class="flex flex-row justify-center items-center gap-2 text-lg">
+        <button
+          class="w-[8rem] h-[3rem] rounded-md mt-4 hover:bg-[#113CFC] hover:text-[#ffff00] hover:shadow-[0_0.5em_0.5em_-0.4em_#193498] hover:translate-y-[-0.1em] ease-linear duration-[0.2s] cursor-default"
+          routerLink="/home" routerLinkActive="activebutton" ariaCurrentWhenActive="page">
+          Home
+        </button>
+        <button
+          class="w-[8rem] h-[3rem] rounded-md mt-4 hover:bg-[#113CFC] hover:text-[#ffff00] hover:shadow-[0_0.5em_0.5em_-0.4em_#193498] hover:translate-y-[-0.1em] ease-linear duration-[0.2s] cursor-default"
+          routerLink="/about" routerLinkActive="activebutton" ariaCurrentWhenActive="page">
+          About
+        </button>
+        <button
+          class="w-[8rem] h-[3rem] rounded-md mt-4 hover:bg-[#113CFC] hover:text-[#ffff00] hover:shadow-[0_0.5em_0.5em_-0.4em_#193498] hover:translate-y-[-0.1em] ease-linear duration-[0.2s] cursor-default"
+          routerLink="/contact" routerLinkActive="activebutton" ariaCurrentWhenActive="page">
+          Contact
+        </button>
+        <button
+          class="w-[8rem] h-[3rem] rounded-md mt-4 hover:bg-[#113CFC] hover:text-[#ffff00] hover:shadow-[0_0.5em_0.5em_-0.4em_#193498] hover:translate-y-[-0.1em] ease-linear duration-[0.2s] cursor-default"
+          routerLink="/faqs" routerLinkActive="activebutton" ariaCurrentWhenActive="page">
+          Help
+        </button>
+        <button
+          class="w-[8rem] h-[3rem] rounded-md mt-4 hover:bg-[#113CFC] hover:text-[#ffff00] hover:shadow-[0_0.5em_0.5em_-0.4em_#193498] hover:translate-y-[-0.1em] ease-linear duration-[0.2s] cursor-default"
+          routerLink="/download" routerLinkActive="activebutton" ariaCurrentWhenActive="page">
+          Download
+        </button>
+        <button
+          class="w-[8rem] h-[3rem] rounded-md mt-4 hover:bg-[#113CFC] hover:text-[#ffff00] hover:shadow-[0_0.5em_0.5em_-0.4em_#193498] hover:translate-y-[-0.1em] ease-linear duration-[0.2s] cursor-default"
+          routerLink="/login" routerLinkActive="activebutton" ariaCurrentWhenActive="page">
+          Login
+        </button>
+      </nav>
+    </div>
+    <button
+      class="h-[32px] w-[32px] rounded-md flex justify-center items-center hover:bg-[#113CFC] hover:text-[#ffff00] hover:shadow-[0_0.5em_0.5em_-0.4em_#193498] hover:translate-y-[-0.1em] lg:hidden "
+      (click)="showMenu()">
+      <mat-icon>{{menu ? 'close' : 'menu'}}</mat-icon>
+    </button>
+  </div>
+
+  <ul
+    [class]="'w-full px-8 text-[Poppins] text-white text-lg justify-center items-center ' + (menu ? 'flex flex-col' : 'hidden') + ' lg:hidden'"
+    *ngFor="let item of navItems">
+    <li class="cursor-default w-full">
+      <button (click)="linkClick(item)"
+        class="w-full h-[3rem] rounded-md mt-4 hover:bg-[#113CFC] hover:text-[#ffff00] hover:shadow-[0_0.5em_0.5em_-0.4em_#193498] hover:translate-y-[-0.1em] cursor-default border-b-[2px] border-[#193498]">{{
+        item['name'] }}</button>
+    </li>
+  </ul>
+</header>

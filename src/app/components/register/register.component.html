@@ -1,0 +1,44 @@
+<section
+    class="w-full h-screen mt-[-100px] mb-[-80px] flex flex-col justify-center items-center bg-gradient-to-r from-[#1597E5] to-[#193498]">
+    <div class="w-[800px] h-[450px] bg-white rounded-md flex flex-col justify-around px-2">
+        <div class="flex flex-row justify-evenly items-center ">
+            <div class="flex flex-col justify-center items-center gap-1">
+                <div class="bg-darkPrimary h-[24px] w-[24px] rounded-full flex justify-center items-center">1</div>
+                <div>Account Information</div>
+            </div>
+            <div class="flex flex-col justify-center items-center gap-1">
+                <div class="bg-lightSecondary h-[24px] w-[24px] rounded-full flex justify-center items-center">2</div>
+                <div>Security</div>
+            </div>
+        </div>
+
+        <span class="text-2xl text-black font-[Poppins] font-bold ml-10">Personal details</span>
+        <form class="text-black text-lg font-[Poppins] flex flex-col justify-center items-center gap-2">
+            <div class="flex flex-col items-start gap-1">
+                <label class="text-dark">Card Account Number:</label>
+                <input type="text" name="InputAccNum" id="inputNoSpecialChars1"
+                    class="w-[650px] h-[36px] text-[14px] border-slate-300 border-[1px] rounded-md outline-none p-2"
+                    placeholder="Enter Card Account No." required autocomplete="off" autofocus>
+            </div>
+            <div class="flex flex-col items-start gap-1">
+                <label class="text-black">Name:</label>
+                <input type="password" name="StorePass" id="inputNoSpecialChars2"
+                    class="w-[650px] h-[36px] text-[14px] border-slate-300 border-[1px] rounded-md outline-none p-2"
+                    placeholder="Full Name" required>
+            </div>
+            <div class="flex flex-col items-start gap-1">
+                <label class="text-black">Phone:</label>
+                <input type="password" name="StorePass" id="inputNoSpecialChars2"
+                    class="w-[650px] h-[36px] text-[14px] border-slate-300 border-[1px] rounded-md outline-none p-2"
+                    placeholder="Ex. 09 1234567890" required>
+            </div>
+        </form>
+        <div class="flex flex-row justify-between items-center text-md font-[Poppins] font-medium mx-16">
+            <button class="w-[4rem] h-[2rem] text-white bg-lightPrimary rounded-lg hover:bg-blue-900">prev</button>
+            <div class="flex flex-row gap-2">
+                <button class="w-[4rem] h-[2rem] text-white bg-green-500 rounded-lg hover:bg-green-900">create</button>
+                <button class="w-[4rem] h-[2rem] text-white bg-red-500 rounded-lg hover:bg-red-900">cancel</button>
+            </div>
+        </div>
+    </div>
+</section>

@@ -13,8 +13,8 @@
     <img src="/assets/images/home/jeepvector.png" alt="jeep-vector" class="hero-banner__img">
 </div> -->
 
-<div
-    class="w-full h-full lg:h-screen bg-lightPrimary bg-gradient-to-r from-[#1597E5] to-[#193498] flex justify-center items-center">
+<section
+    class="w-full h-screen bg-lightPrimary bg-gradient-to-r from-[#1597E5] to-[#193498] flex justify-center items-center">
     <div class="flex flex-row justify-end items-center home--mp">
         <div class="text-white font-[Poppins] flex flex-col gap-2">
             <span class="text-4xl font-bold"> One - Tap Ride</span>
@@ -23,11 +23,13 @@
                 commuting experience.
             </p>
             <p class="text-lg">Not registered yet?</p>
-            <button class="h-[3rem] w-[14rem] bg-lightPrimary rounded-lg hover:text-lightPrimary hover:bg-white">
+            <button class="h-[3rem] w-[14rem] bg-lightPrimary rounded-lg hover:text-lightPrimary hover:bg-white"
+            routerLink="/register" ariaCurrentWhenActive="page"    
+            >
                 Create account
             </button>
         </div>
         <img src="/assets/images/home/jeepvector.png" alt="jeep-vector" class="w-[450px] hidden lg:flex lg:w-[60%]">
-    </div>
-
-</div>
+    </div> 
+</section> 
+<app-contact></app-contact>

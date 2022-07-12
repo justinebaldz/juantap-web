@@ -1,1 +1,36 @@
-<p>login works!</p>
+<section
+    class="w-full h-screen md:mt-[-100px] md:mb-[-80px] bg-gradient-to-r from-[#1597E5] to-[#193498] flex flex-col justify-center items-center p-[50px]">
+    <div
+        class="w-[420px] sm:w-[480px] h-[400px] rounded-xl bg-white flex flex-col justify-center items-center shadow-[10px_-10px_0_4px_#1597e5]">
+        <span class="text-xl font-[Poppins] font-medium text-black mb-4">SIGN IN</span>
+        <form class="text-black text-lg font-[Poppins] flex flex-col justify-center items-center gap-2">
+            <div class="flex flex-col items-start gap-1">
+                <label class="text-dark">Email or Phone</label>
+                <input type="text" name="InputAccNum" id="inputNoSpecialChars1"
+                    class="w-[350px] h-[48px] text-[14px] bg-[#b6b3b3a2] rounded-md outline-none p-2"
+                    placeholder="Enter Email or Phone" required autocomplete="off" autofocus>
+            </div>
+            <div class="flex flex-col items-start gap-1">
+                <label class="text-black">Password</label>
+                <input type="password" name="StorePass" id="inputNoSpecialChars2"
+                    class="w-[350px] h-[48px] text-[14px] bg-[#b6b3b3a2] rounded-md outline-none p-2"
+                    placeholder="Password" required>
+            </div>
+            <p class="self-start text-darkPrimary"><a href="forgotpassword.php">Forgot your password ?</a></p>
+            <div class="text-lg font-medium flex flex-row justify-center items-center gap-3">
+                <button type="submit" class="w-[10rem] h-[3rem] text-white bg-lightPrimary rounded-lg"
+                    data-toggle="tooltip" data-placement="left" title="Click to Login">Login
+                </button>
+                <input type="button"
+                    class="w-[10rem] h-[3rem] text-lightPrimary hover:text-white border-lightPrimary border-[1px] hover:border-lightSecondary hover:bg-lightSecondary rounded-lg"
+                    data-toggle="tooltip" data-placement="left" onclick="window.location.href='dashboardquickview.php'"
+                    title="Click to View Card Info" value="Quick View">
+
+            </div>
+        </form>
+        <div class="w-[350px] flex flex-row justify-center items-center text-center mt-4">
+            <p>Don't have an account ?
+            <a routerLink="/register" ariaCurrentWhenActive="page" class="text-darkSecondary">Register</a></p>
+        </div>
+    </div>
+</section>

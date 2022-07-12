@@ -147,16 +147,19 @@
     }
 }
 
-.contact--mp {
-    margin: 0 20px;
-    padding: 60px 0;
-}
 
 .margin {
+    &--section {
+        margin-top: 2rem;
+        margin-bottom: 8rem;
+    }
+    &--text {
+        margin-top: 8rem;
+        margin-bottom: 1rem;
+    }
     &--card {
         margin: 10px;
-        padding: 20px;
-        // max-width: 30%;
+        padding: 20px; 
     }
 
     &--img {

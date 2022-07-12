@@ -10,12 +10,17 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { FaqsComponent } from './pages/faqs/faqs.component';
 import { DownloadComponent } from './pages/download/download.component';
 import { FooterComponent } from './pages/footer/footer.component';
+import { LoginComponent } from './pages/login/login.component';
+import { HeaderComponent } from './components/header/header.component';
+import { RegisterComponent } from './components/register/register.component';
 
 import { MatIconModule } from '@angular/material/icon';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatStepperModule } from '@angular/material/stepper';
+
 import { ScrollService } from './services/scroll.service';
-import { LoginComponent } from './pages/login/login.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +32,8 @@ import { LoginComponent } from './pages/login/login.component';
     DownloadComponent,
     FooterComponent,
     LoginComponent,
+    HeaderComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,10 +42,10 @@ import { LoginComponent } from './pages/login/login.component';
     MatIconModule,
     MatExpansionModule,
     MatToolbarModule,
+    MatFormFieldModule,
+    MatStepperModule,
   ],
-  providers: [
-    ScrollService
-  ],
+  providers: [ScrollService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
