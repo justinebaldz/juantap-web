@@ -1,44 +1,88 @@
-<section
-    class="w-full h-screen mt-[-100px] mb-[-80px] flex flex-col justify-center items-center bg-gradient-to-r from-[#1597E5] to-[#193498]">
-    <div class="w-[95%] sm:w-[70%] md:w-[60%] lg:w-[40%] h-[450px] bg-white rounded-md flex flex-col justify-around px-2">
-        <div class="flex flex-row justify-evenly items-center ">
-            <div class="flex flex-col justify-center items-center gap-1">
-                <div class="bg-darkPrimary h-[24px] w-[24px] rounded-full flex justify-center items-center">1</div>
-                <div>Account Information</div>
-            </div>
-            <div class="flex flex-col justify-center items-center gap-1">
-                <div class="bg-lightSecondary h-[24px] w-[24px] rounded-full flex justify-center items-center">2</div>
-                <div>Security</div>
-            </div>
-        </div>
-
-        <span class="w-full text-2xl text-black font-[Poppins] font-bold pl-4">Personal details</span>
-        <form class="w-full text-black text-lg font-[Poppins] flex flex-col items-center gap-2">
-            <div class="w-[90%] flex flex-col items-start gap-1">
-                <label class="text-dark">Card Account Number:</label>
-                <input type="text" name="InputAccNum" id="inputNoSpecialChars1"
-                    class="w-full h-[36px] text-[14px] border-slate-300 border-[1px] rounded-md outline-none p-2"
-                    placeholder="Enter Card Account No." required autocomplete="off" autofocus>
-            </div>
-            <div class="w-[90%] flex flex-col items-start gap-1">
-                <label class="text-black">Name:</label>
-                <input type="password" name="StorePass" id="inputNoSpecialChars2"
-                    class="w-full h-[36px] text-[14px] border-slate-300 border-[1px] rounded-md outline-none p-2"
-                    placeholder="Full Name" required>
-            </div>
-            <div class="w-[90%] flex flex-col items-start gap-1">
-                <label class="text-black">Phone:</label>
-                <input type="password" name="StorePass" id="inputNoSpecialChars2"
-                    class="w-full h-[36px] text-[14px] border-slate-300 border-[1px] rounded-md outline-none p-2"
-                    placeholder="Ex. 09 1234567890" required>
-            </div>
-        </form>
-        <div class="flex flex-row justify-between items-center text-md font-[Poppins] font-medium mx-16">
-            <button class="w-[4rem] h-[2rem] text-white bg-lightPrimary rounded-lg hover:bg-blue-900">prev</button>
-            <div class="flex flex-row gap-2">
-                <button class="w-[4rem] h-[2rem] text-white bg-green-500 rounded-lg hover:bg-green-900">create</button>
-                <button class="w-[4rem] h-[2rem] text-white bg-red-500 rounded-lg hover:bg-red-900">cancel</button>
-            </div>
-        </div>
+<section class="font-[Poppins]">
+    <div class="flex flex-row justify-between items-baseline">
+        <span mat-dialog-title class="text-2xl font-bold">Register </span>
+        <button class="hover:text-red-500" mat-button (click)="onNoClick()">
+            <mat-icon>close</mat-icon>
+        </button>
     </div>
+    <mat-stepper labelPosition="bottom"  #stepper>
+        <mat-step [stepControl]="firstFormGroup" class="flex flex-col ">
+            <form [formGroup]="firstFormGroup" class="flex flex-col justify-center items-center">
+                <ng-template matStepLabel>Account Information</ng-template>
+                <h1 mat-dialog-title class="self-start pl-8">Personal Details</h1>
+                <mat-form-field appearance="outline" class="w-[80%]">
+                    <mat-label>Card Account Number</mat-label>
+                    <input matInput placeholder="Ex. 2022112208575678" formControlName="gcan" required> 
+                </mat-form-field>
+                <mat-form-field appearance="outline" class="w-[80%]">
+                    <mat-label>Name</mat-label>
+                    <input matInput placeholder="Last name, First name Middle name" formControlName="name" required>
+                </mat-form-field>
+                <mat-form-field appearance="outline" class="w-[80%]">
+                    <mat-label>Phone</mat-label> 
+                    <input matInput placeholder="Ex. 09 1234567890" formControlName="phone" type="tel" required>
+                </mat-form-field>
+                <div class="w-[90%] flex flex-row justify-end mt-8">
+                    <button mat-button matStepperNext
+                        class="w-[7rem] h-[3rem] text-white bg-lightPrimary rounded-lg">Next</button>
+                </div>
+
+            </form>
+        </mat-step>
+        <mat-step [stepControl]="secondFormGroup">
+            <form [formGroup]="secondFormGroup" class="flex flex-col justify-around items-center">
+                <ng-template matStepLabel>Security</ng-template>
+                <h1 mat-dialog-title class="self-start pl-8">Secure your account</h1>
+                <mat-form-field appearance="outline" class="w-[80%]">
+                    <mat-label>Email</mat-label>
+                    <input matInput placeholder="Enter your email address" [formControl]="email" required>
+                    <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+                </mat-form-field>
+                <mat-form-field appearance="outline" class="w-[80%]">
+                    <mat-label>Password</mat-label>
+                    <input matInput [type]="hide ? 'password' : 'text'" formControlName="password" required>
+                    <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                        [attr.aria-pressed]="hide">
+                        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                    </button>
+                </mat-form-field>
+                <mat-form-field appearance="outline" class="w-[80%]">
+                    <mat-label>Confirm Password</mat-label>
+                    <input matInput [type]="hide ? 'password' : 'text'" formControlName="confirmPassword" required>
+                    <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                        [attr.aria-pressed]="hide">
+                        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                    </button>
+                </mat-form-field>
+
+                <div class="w-[90%] flex flex-row justify-between mt-8">
+                    <button mat-button matStepperPrevious
+                        class="w-[7rem] h-[3rem] text-white bg-lightPrimary rounded-lg">Back</button>
+                    <button mat-button matStepperNext
+                        class="w-[7rem] h-[3rem] text-white bg-green-500 rounded-lg">Next</button>
+                </div>
+            </form>
+        </mat-step>
+        <mat-step [stepControl]="thirdFormGroup">
+            <form [formGroup]="thirdFormGroup" class="flex flex-col justify-center items-center">
+                <ng-template matStepLabel>Verify</ng-template>
+                <mat-label>Enter the verification code we send to your email</mat-label>
+                <mat-form-field appearance="outline" class="text-xl mt-4">
+                    <mat-label>Code</mat-label>
+                    <input matInput type="text" maxlength="4" pattern="[0-9]{4}" formControlName="code"
+                        oninput="this.value=this.value.replace(/[^0-9]/g,'');" 
+                        class="code"
+                        required>
+                </mat-form-field>
+                <div class="flex flex-col justify-center mt-6 gap-2">
+                    <button mat-button [mat-dialog-close]="true"
+                        class="w-[12rem] h-[3rem] text-white bg-green-500 rounded-lg">Confirm</button>
+                    <button mat-button matStepperPrevious
+                        class="w-[12rem] h-[3rem] text-white bg-lightPrimary rounded-lg">Back</button>
+                    <button mat-button class="w-[12rem] h-[3rem] text-white bg-red-500 rounded-lg"
+                        (click)="stepper.reset()">Reset</button>
+                </div>
+            </form>
+        </mat-step>
+    </mat-stepper>
 </section>

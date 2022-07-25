@@ -19,6 +19,9 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatStepperModule } from '@angular/material/stepper';
+import { MatDialogModule } from '@angular/material/dialog';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
 
 import { ScrollService } from './services/scroll.service';
 
@@ -44,6 +47,9 @@ import { ScrollService } from './services/scroll.service';
     MatToolbarModule,
     MatFormFieldModule,
     MatStepperModule,
+    MatDialogModule,
+    ReactiveFormsModule,
+    MatInputModule,
   ],
   providers: [ScrollService],
   bootstrap: [AppComponent],
