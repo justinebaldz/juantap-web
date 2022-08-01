@@ -1,71 +1,71 @@
 @import '../../globals';
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+// * {
+//     margin: 0;
+//     padding: 0;
+//     box-sizing: border-box;
+// }
 
-.about {  
-    &__container {
-        width: 100%;
-        min-width: 1200px;
-        height: 100vh;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center; 
-    }
+// .about {  
+//     &__container {
+//         width: 100%;
+//         min-width: 1200px;
+//         height: 100vh;
+//         min-height: 100vh;
+//         display: flex;
+//         flex-direction: row;
+//         justify-content: space-evenly;
+//         align-items: center; 
+//     }
 
-    &__img {
-        width: 25%;
-    }
+//     &__img {
+//         width: 25%;
+//     }
 
-    &__text {
-        display: flex;
-        flex-direction: column;
-        width: 50%;
-    }
+//     &__text {
+//         display: flex;
+//         flex-direction: column;
+//         width: 50%;
+//     }
 
-    &__title {
-        @include text;
-        font-size: 60px;
-        color: #69DADB;
-        padding: 2rem 0;
-        font-weight: bold;
-    }
+//     &__title {
+//         @include text;
+//         font-size: 60px;
+//         color: #69DADB;
+//         padding: 2rem 0;
+//         font-weight: bold;
+//     }
 
-    &__heading {
-        @include text;
-        font-size: 30px;
-        font-weight: 600;
-        padding-top: 1rem;
-    }
+//     &__heading {
+//         @include text;
+//         font-size: 30px;
+//         font-weight: 600;
+//         padding-top: 1rem;
+//     }
 
-    &__description {
-        @include text;
-        word-break: normal; 
-        font-size: 18px;
-        line-height: 1.5rem;
-        padding: .5rem 0;
-        width: 100%;
-    }
+//     &__description {
+//         @include text;
+//         word-break: normal; 
+//         font-size: 18px;
+//         line-height: 1.5rem;
+//         padding: .5rem 0;
+//         width: 100%;
+//     }
 
-    &__list {
-        @include text;
-        font-size: 18px;
-        margin-left: 1rem; 
-    }
+//     &__list {
+//         @include text;
+//         font-size: 18px;
+//         margin-left: 1rem; 
+//     }
 
-    &__item {
-        word-break: normal; 
-        width: 100%;
-    }
+//     &__item {
+//         word-break: normal; 
+//         width: 100%;
+//     }
 
-}
+// }
 
-.about--mp {
-    margin: 0 20px;
-    padding: 20px 0;
-}
+// .about--mp {
+//     margin: 0 20px;
+//     padding: 20px 0;
+// }

@@ -5,7 +5,7 @@
             <mat-icon>close</mat-icon>
         </button>
     </div>
-    <mat-stepper labelPosition="bottom"  #stepper>
+    <mat-stepper labelPosition="bottom" linear #stepper>
         <mat-step [stepControl]="firstFormGroup" class="flex flex-col ">
             <form [formGroup]="firstFormGroup" class="flex flex-col justify-center items-center">
                 <ng-template matStepLabel>Account Information</ng-template>

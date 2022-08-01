@@ -1,12 +1,12 @@
-<section class="w-full h-full xl:h-screen bg-[#1597E5] bg-gradient-to-r from-[#1597E5] to-[#193498] text-[Poppins] flex justify-center items-center ">
+<section [class]="'w-full ' + (panelOpenState ? 'h-full' : 'h-screen') + ' 2xl:h-screen 2xl:mt-[-100px] 2xl:mb-[-80px] bg-[#1597E5] bg-gradient-to-r from-[#1597E5] to-[#193498] text-[Poppins] flex justify-center items-center '">
     <div class="flex flex-col justify-center items-center mx-5 py-8">
-        <span class="text-3xl md:text-6xl font-bold text-center text-white py-8">Frequently
+        <span class="text-3xl lg:text-4xl 2xl:text-6xl font-bold text-center text-white py-8">Frequently
             <span class="text-[#ffff00]">
                 Asked Questions
             </span>
         </span>
         <div class="flex flex-col md:flex-row justify-evenly items-center">
-            <mat-accordion class="w-[98%] lg:w-[50%] font-[Poppins] text-[#193498]">
+            <mat-accordion class="w-[98%] h-full lg:w-[40%] font-[Poppins] text-[#193498]">
                 <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
                     <mat-expansion-panel-header class="h-[48px] text-md sm:text-lg font-medium">
                         <mat-panel-title class="h-[30px]">
@@ -139,7 +139,7 @@
                     </ul>
                 </mat-expansion-panel>
             </mat-accordion>
-            <img class="h-[450px] hidden lg:flex" src="/assets/images/faqs/faqs.svg" alt="">
+            <img class="h-[350px] hidden lg:flex" src="/assets/images/faqs/faqs.svg" alt="">
         </div>
     </div>
 </section>
