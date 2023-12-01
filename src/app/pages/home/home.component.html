@@ -1,19 +1,15 @@
-<section
-    class="w-full h-screen md:mt-[-100px] bg-lightPrimary bg-gradient-to-r from-[#1597E5] to-[#193498] flex justify-center items-center">
-    <div class="w-[80%] flex flex-row justify-evenly items-center">
-        <div class="text-white font-[Poppins] flex flex-col gap-2">
-            <span class="text-4xl font-bold"> One - Tap Ride</span>
-            <p class="text-2xl font-medium">
-                Enjoy a hassle free <br />
-                commuting experience.
-            </p>
-            <p class="text-lg">Not registered yet?</p>
-            <button class="h-[3rem] w-[14rem] bg-lightPrimary rounded-lg hover:text-lightPrimary hover:bg-white"
-                mat-button (click)="openDialog()">
-                Create account
-            </button>
-        </div>
-        <img src="/assets/images/home/jeepvector.png" alt="jeep-vector" class="hidden lg:flex lg:w-[550px] ">
+<section class="home">
+    <div class="home__text">
+        <span class="home__text--title"> One - Tap Ride</span>
+        <p class="home__text--subtitle">
+            Enjoy a hassle free <br />
+            commuting experience.
+        </p>
+        <span class="home__text--question">Not registered yet?</span>
+        <button class="home__button" mat-button (click)="openDialog()">
+            Create account
+        </button>
     </div>
+    <img class="home__img" src="/assets/images/home/jeepvector.png" alt="jeep-vector">
 </section>
 <app-contact></app-contact>
