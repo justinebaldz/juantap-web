@@ -61,9 +61,7 @@ export class HeaderComponent implements OnInit {
     else this.menu = true;
   }
 
-  linkClick(item: any) {
-    this.router.navigate([item['link']]);
-    this.linkService.setNavItem(item);
+  linkClick() {
     this.menu = !this.menu;
     this.isLogin = !this.isLogin;
   }
