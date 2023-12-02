@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "juantap-web:build:production"
+              "buildTarget": "juantap-web:build:production"
             },
             "development": {
-              "browserTarget": "juantap-web:build:development"
+              "buildTarget": "juantap-web:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +80,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "juantap-web:build"
+            "buildTarget": "juantap-web:build"
           }
         },
         "test": {
