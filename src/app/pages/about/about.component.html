@@ -1,49 +1,22 @@
-<!-- <section class="about">
-    <div class="about__container">
-        <img class="about__img" src="/assets/images/about/juantap-mock-up.png" alt="device mock up">
-        <div class="about__text">
-            <div class="about__objective">
-                <h1 class="about__title">ABOUT US</h1>
-                <h3 class="about__heading">What is JuanTap?</h3>
-                <p class="about__description">
-                    This would simplify routine transactions by providing Filipinos with a more convenient and modern method
-                    of payment. It is a stored value contactless card that may be used for fare payments in  an increasing
-                    number of point-to-point Modern jeepneys.<br/> You may buy the card and cash it in at a specified convenience
-                    outlet.
-                </p>
-            </div>
-            <div class="about__objective">
-                <h3 class="about__heading">Our Juantap's Objectives:</h3>
-                <ul class="about__list" *ngFor="let object of objectives">
-                    <li class="about__item">{{ object }}</li>
-                </ul>
-            </div>
+<section class="about">
+    <img class="about__img" src="/assets/images/about/juantap-mock-up.png" alt="device mock up">
+    <div class="about__text">
+        <div class="about__objective">
+            <h1 class="about__title">ABOUT US</h1>
+            <h3 class="about__heading">What is JuanTap?</h3>
+            <p class="about__description">
+                This would simplify routine transactions by providing Filipinos with a more convenient and modern method
+                of payment. It is a stored value contactless card that may be used for fare payments in an increasing
+                number of point-to-point Modern jeepneys.<br /> You may buy the card and cash it in at a specified
+                convenience
+                outlet.
+            </p>
         </div>
-    </div>
-</section> -->
-
-<section class="w-full h-screen md:mt-[-100px] md:mb-[-80px] flex flex-col justify-center items-center">
-    <div class="w-[100%] h-[80%] flex flex-row justify-center items-center gap-[5rem]">
-        <img class="w-[20%] hidden lg:flex 2xl:w-[25%]" src="/assets/images/about/juantap-mock-up.png" alt="device mock up">
-        <div class="w-[80%] lg:w-[50%]">
-            <div class=" flex flex-col gap-1 lg:gap-2">
-                <span class="text-5xl 2xl:text-6xl font-bold text-lightSecondary">ABOUT US</span>
-                <br />
-                <span class="text-lg md:text-xl font-medium">What is JuanTap?</span>
-                <p class="text-md">
-                    This would simplify routine transactions by providing Filipinos with a more convenient and modern
-                    method
-                    of payment. It is a stored value contactless card that may be used for fare payments in an
-                    increasing
-                    number of point-to-point Modern jeepneys. You may buy the card and cash it in at a specified
-                    convenience
-                    outlet.
-                </p>
-                <span class="text-lg md:text-xl font-medium">Our Juantap's Objectives:</span>
-                <ul class="text-md" *ngFor="let object of objectives">
-                    <li class="">{{ object }}</li>
-                </ul>
-            </div>
+        <div class="about__objective">
+            <h3 class="about__heading">Objectives:</h3>
+            <ul class="about__list" *ngFor="let object of objectives">
+                <li class="about__item">{{ object }}</li>
+            </ul>
         </div>
     </div>
 </section>
