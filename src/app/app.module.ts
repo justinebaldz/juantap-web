@@ -24,6 +24,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 
 import { ScrollService } from './services/scroll.service';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import { ScrollService } from './services/scroll.service';
     MatDialogModule,
     ReactiveFormsModule,
     MatInputModule,
+    FontAwesomeModule,
   ],
   providers: [ScrollService],
   bootstrap: [AppComponent],
